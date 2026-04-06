@@ -5,6 +5,13 @@ execute store result entity @s data.spawner_levels.speed int 1 run scoreboard pl
 
 scoreboard players reset @s spawner_levels.temp_speed
 
+# Spawner
+execute if entity @s[nbt={data:{spawner_levels:{speed:1}}}] run data merge block ~ ~ ~ {MinSpawnDelay: 200s, MaxSpawnDelay: 800s}
+execute if entity @s[nbt={data:{spawner_levels:{speed:2}}}] run data merge block ~ ~ ~ {MinSpawnDelay: 170s, MaxSpawnDelay: 680s}
+execute if entity @s[nbt={data:{spawner_levels:{speed:3}}}] run data merge block ~ ~ ~ {MinSpawnDelay: 140s, MaxSpawnDelay: 560s}
+execute if entity @s[nbt={data:{spawner_levels:{speed:4}}}] run data merge block ~ ~ ~ {MinSpawnDelay: 110s, MaxSpawnDelay: 440s}
+execute if entity @s[nbt={data:{spawner_levels:{speed:5}}}] run data merge block ~ ~ ~ {MinSpawnDelay: 80s, MaxSpawnDelay: 320s}
+
 # Text
 execute if entity @s[nbt={data:{spawner_levels:{speed:1}}}] run return run data modify entity @n[type=minecraft:text_display,distance=..0.00001] text.extra[0].text set value "ɪ\n"
 execute if entity @s[nbt={data:{spawner_levels:{speed:2}}}] run return run data modify entity @n[type=minecraft:text_display,distance=..0.00001] text.extra[0].text set value "ɪɪ\n"
