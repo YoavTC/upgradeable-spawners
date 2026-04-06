@@ -1,0 +1,22 @@
+{
+	"criteria": {
+		"a": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": "spawner"
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "rewards": {
+        "function": "upgradeable-spawners:_events/on_interact_with_spawner"
+    }
+}

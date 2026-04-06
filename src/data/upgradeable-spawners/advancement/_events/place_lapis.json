@@ -1,0 +1,81 @@
+{
+	"criteria": {
+		"a": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": "minecraft:lapis_block"
+							}
+						}
+					},
+					{
+						"condition": "minecraft:any_of",
+						"terms": [
+							{
+								"condition": "minecraft:location_check",
+								"offsetX": 1,
+								"predicate": {
+									"block": {
+										"blocks": "minecraft:spawner"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:location_check",
+								"offsetY": 1,
+								"predicate": {
+									"block": {
+										"blocks": "minecraft:spawner"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:location_check",
+								"offsetZ": 1,
+								"predicate": {
+									"block": {
+										"blocks": "minecraft:spawner"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:location_check",
+								"offsetX": -1,
+								"predicate": {
+									"block": {
+										"blocks": "minecraft:spawner"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:location_check",
+								"offsetY": -1,
+								"predicate": {
+									"block": {
+										"blocks": "minecraft:spawner"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:location_check",
+								"offsetZ": -1,
+								"predicate": {
+									"block": {
+										"blocks": "minecraft:spawner"
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+    "rewards": {
+        "function": "upgradeable-spawners:_events/on_place_lapis"
+    }
+}
