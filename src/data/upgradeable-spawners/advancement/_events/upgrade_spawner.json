@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"a": {
+		"upgrade": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"location": [
@@ -8,7 +8,7 @@
 						"condition": "minecraft:location_check",
 						"predicate": {
 							"block": {
-								"blocks": "minecraft:lapis_block"
+								"blocks": "#upgradeable-spawners:upgrade_blocks"
 							}
 						}
 					},
@@ -76,6 +76,6 @@
 		}
 	},
     "rewards": {
-        "function": "upgradeable-spawners:_events/on_place_lapis"
+        "function": "upgradeable-spawners:_events/on_upgrade_spawner"
     }
 }

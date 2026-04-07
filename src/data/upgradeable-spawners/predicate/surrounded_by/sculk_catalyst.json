@@ -1,0 +1,81 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                    "blocks": "spawner"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetX": 1,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                    "blocks": "sculk_catalyst"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetX": -1,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                    "blocks": "sculk_catalyst"
+                }
+            }
+        },{
+            "condition": "location_check",
+            "offsetX": 0,
+            "offsetY": 1,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                    "blocks": "sculk_catalyst"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetX": 0,
+            "offsetY": -1,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                    "blocks": "sculk_catalyst"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 1,
+            "predicate": {
+                "block": {
+                    "blocks": "sculk_catalyst"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": -1,
+            "predicate": {
+                "block": {
+                    "blocks": "sculk_catalyst"
+                }
+            }
+        }
+    ]
+}
