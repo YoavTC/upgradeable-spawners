@@ -14,9 +14,6 @@ execute unless predicate upgradeable-spawners:surrounded_by/lapis_block unless p
 execute align xyz positioned ~.5 ~.5 ~.5 as @n[type=marker,distance=..0.0001] run return run function upgradeable-spawners:upgrade_existing
 
 # Create new
-execute align xyz if predicate upgradeable-spawners:surrounded_by/lapis_block positioned ~.5 ~.5 ~.5 run function upgradeable-spawners:create {"type": "range"}
-execute align xyz if predicate upgradeable-spawners:surrounded_by/creaking_heart positioned ~.5 ~.5 ~.5 run function upgradeable-spawners:create {"type": "activation"}
-execute align xyz if predicate upgradeable-spawners:surrounded_by/sculk_catalyst positioned ~.5 ~.5 ~.5 run function upgradeable-spawners:create {"type": "speed"}
-
-# Remove blocks
-function upgradeable-spawners:clear_blocks
+execute align xyz if predicate upgradeable-spawners:surrounded_by/lapis_block positioned ~.5 ~.5 ~.5 run return run function upgradeable-spawners:create {"type": "range"}
+execute align xyz if predicate upgradeable-spawners:surrounded_by/creaking_heart positioned ~.5 ~.5 ~.5 run return run function upgradeable-spawners:create {"type": "activation"}
+execute align xyz if predicate upgradeable-spawners:surrounded_by/sculk_catalyst positioned ~.5 ~.5 ~.5 run return run function upgradeable-spawners:create {"type": "speed"}

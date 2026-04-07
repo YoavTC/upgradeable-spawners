@@ -10,3 +10,6 @@ execute as @n[type=marker,distance=..0.00001] run function upgradeable-spawners:
 
 # Upgrade
 $execute as @n[type=marker,distance=..0.00001] run function upgradeable-spawners:upgrade/$(type)
+
+# Remove blocks
+function upgradeable-spawners:clear_blocks
