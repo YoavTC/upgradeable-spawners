@@ -12,6 +12,9 @@ execute if entity @s[nbt={data:{spawner_levels:{range:3}}}] run data modify bloc
 execute if entity @s[nbt={data:{spawner_levels:{range:4}}}] run data modify block ~ ~ ~ SpawnRange set value 7s
 execute if entity @s[nbt={data:{spawner_levels:{range:5}}}] run data modify block ~ ~ ~ SpawnRange set value 8s
 
+# Final level upgrade sound
+execute if entity @s[nbt={data:{spawner_levels:{activation:5}}}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 2
+
 # Text
 execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run return run data modify entity @n[type=minecraft:text_display,distance=..0.00001] text.extra[2].text set value "ɪ\n"
 execute if entity @s[nbt={data:{spawner_levels:{range:2}}}] run return run data modify entity @n[type=minecraft:text_display,distance=..0.00001] text.extra[2].text set value "ɪɪ\n"
