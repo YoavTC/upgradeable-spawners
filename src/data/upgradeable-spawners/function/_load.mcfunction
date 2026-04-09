@@ -1,11 +1,14 @@
 # Setup scoreboards
-scoreboard objectives remove spawner_levels.temp_speed
-scoreboard objectives remove spawner_levels.temp_range
-scoreboard objectives remove spawner_levels.temp_activation
+scoreboard objectives remove upgradeable_spawners.spawner_levels.temp_speed
+scoreboard objectives remove upgradeable_spawners.spawner_levels.temp_range
+scoreboard objectives remove upgradeable_spawners.spawner_levels.temp_activation
 
-scoreboard objectives add spawner_levels.temp_speed dummy
-scoreboard objectives add spawner_levels.temp_range dummy
-scoreboard objectives add spawner_levels.temp_activation dummy
+scoreboard objectives add upgradeable_spawners.spawner_levels.temp_speed dummy
+scoreboard objectives add upgradeable_spawners.spawner_levels.temp_range dummy
+scoreboard objectives add upgradeable_spawners.spawner_levels.temp_activation dummy
+
+scoreboard objectives remove upgradeable_spawners.uninstall
+scoreboard objectives add upgradeable_spawners.uninstall dummy
 
 # Schedule tick
 function upgradeable-spawners:_tick

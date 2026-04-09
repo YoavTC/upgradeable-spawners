@@ -1,0 +1,1 @@
+execute as @a[scores={upgradeable_spawners.uninstall=1}] run scoreboard players reset @s upgradeable_spawners.uninstall

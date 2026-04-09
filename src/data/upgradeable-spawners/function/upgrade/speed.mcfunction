@@ -1,9 +1,9 @@
 # Score
-execute store result score @s spawner_levels.temp_speed run data get entity @s data.spawner_levels.speed 1
-scoreboard players add @s spawner_levels.temp_speed 1
-execute store result entity @s data.spawner_levels.speed int 1 run scoreboard players get @s spawner_levels.temp_speed
+execute store result score @s upgradeable_spawners.spawner_levels.temp_speed run data get entity @s data.spawner_levels.speed 1
+scoreboard players add @s upgradeable_spawners.spawner_levels.temp_speed 1
+execute store result entity @s data.spawner_levels.speed int 1 run scoreboard players get @s upgradeable_spawners.spawner_levels.temp_speed
 
-scoreboard players reset @s spawner_levels.temp_speed
+scoreboard players reset @s upgradeable_spawners.spawner_levels.temp_speed
 
 # Spawner
 execute if entity @s[nbt={data:{spawner_levels:{speed:1}}}] run data merge block ~ ~ ~ {MinSpawnDelay: 200s, MaxSpawnDelay: 800s}

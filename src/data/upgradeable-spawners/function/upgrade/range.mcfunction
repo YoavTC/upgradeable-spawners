@@ -1,9 +1,9 @@
 # Score
-execute store result score @s spawner_levels.temp_range run data get entity @s data.spawner_levels.range 1
-scoreboard players add @s spawner_levels.temp_range 1
-execute store result entity @s data.spawner_levels.range int 1 run scoreboard players get @s spawner_levels.temp_range
+execute store result score @s upgradeable_spawners.spawner_levels.temp_range run data get entity @s data.spawner_levels.range 1
+scoreboard players add @s upgradeable_spawners.spawner_levels.temp_range 1
+execute store result entity @s data.spawner_levels.range int 1 run scoreboard players get @s upgradeable_spawners.spawner_levels.temp_range
 
-scoreboard players reset @s spawner_levels.temp_range
+scoreboard players reset @s upgradeable_spawners.spawner_levels.temp_range
 
 # Spawner
 execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run data modify block ~ ~ ~ SpawnRange set value 4s
