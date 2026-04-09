@@ -1,0 +1,13 @@
+{
+	"display": {
+		"icon": "minecraft:spawner",
+		"title": "A Better Cage",
+		"description": "Create an upgraded spawner"
+	},
+	"parent": "upgradeable-spawners:root",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

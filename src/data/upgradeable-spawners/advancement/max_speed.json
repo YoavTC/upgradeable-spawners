@@ -1,0 +1,15 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:sculk_catalyst"
+		},
+		"title": "Overclocked",
+		"description": "Max a spawner's spawn speed"
+	},
+	"parent": "upgradeable-spawners:create_upgraded_spawner",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

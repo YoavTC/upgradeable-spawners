@@ -1,0 +1,15 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:lapis_block"
+		},
+		"title": "Far and Wide",
+		"description": "Max a spawner's spawn range"
+	},
+	"parent": "upgradeable-spawners:create_upgraded_spawner",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

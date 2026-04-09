@@ -1,0 +1,55 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:spawner",
+			"components": {
+				"minecraft:enchantment_glint_override": true
+			}
+		},
+		"title": "Peak Performance",
+		"description": "Upgrade all attributes of a spawner, to the max",
+		"frame": "challenge"
+	},
+	"parent": "upgradeable-spawners:root",
+	"criteria": {
+		"activation": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"upgradeable-spawners:max_activation": true
+						}
+					}
+				}
+			}
+		},
+		"speed": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"upgradeable-spawners:max_speed": true
+						}
+					}
+				}
+			}
+		},
+		"range": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"upgradeable-spawners:max_range": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

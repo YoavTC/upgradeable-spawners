@@ -13,3 +13,6 @@ $execute as @n[type=marker,distance=..0.00001] run function upgradeable-spawners
 
 # Remove blocks
 function upgradeable-spawners:clear_blocks
+
+# Advancement
+advancement grant @a[distance=..5] only upgradeable-spawners:create_upgraded_spawner

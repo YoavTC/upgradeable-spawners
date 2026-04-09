@@ -1,0 +1,15 @@
+{
+	"display": {
+		"icon": "minecraft:spawner",
+		"title": "Upgradeable Spawners",
+		"description": "",
+        "background": "block/mossy_stone_bricks",
+        "announce_to_chat": false,
+        "show_toast": false
+	},
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
