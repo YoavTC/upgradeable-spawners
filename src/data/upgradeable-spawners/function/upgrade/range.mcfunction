@@ -6,11 +6,11 @@ execute store result entity @s data.spawner_levels.range int 1 run scoreboard pl
 scoreboard players reset @s upgradeable_spawners.spawner_levels.temp_range
 
 # Spawner
-execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run data modify block ~ ~ ~ SpawnRange set value 4s
-execute if entity @s[nbt={data:{spawner_levels:{range:2}}}] run data modify block ~ ~ ~ SpawnRange set value 5s
-execute if entity @s[nbt={data:{spawner_levels:{range:3}}}] run data modify block ~ ~ ~ SpawnRange set value 6s
-execute if entity @s[nbt={data:{spawner_levels:{range:4}}}] run data modify block ~ ~ ~ SpawnRange set value 7s
-execute if entity @s[nbt={data:{spawner_levels:{range:5}}}] run data modify block ~ ~ ~ SpawnRange set value 8s
+execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run data merge block ~ ~ ~ {SpawnRange: 4s, SpawnCount: 4s, MaxNearbyEntities: 6s}
+execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run data merge block ~ ~ ~ {SpawnRange: 5s, SpawnCount: 8s, MaxNearbyEntities: 10s}
+execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run data merge block ~ ~ ~ {SpawnRange: 6s, SpawnCount: 12s, MaxNearbyEntities: 14s}
+execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run data merge block ~ ~ ~ {SpawnRange: 7s, SpawnCount: 16s, MaxNearbyEntities: 18s}
+execute if entity @s[nbt={data:{spawner_levels:{range:1}}}] run data merge block ~ ~ ~ {SpawnRange: 8s, SpawnCount: 20s, MaxNearbyEntities: 22s}
 
 # Final level upgrade sound
 execute if entity @s[nbt={data:{spawner_levels:{range:5}}}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 2
