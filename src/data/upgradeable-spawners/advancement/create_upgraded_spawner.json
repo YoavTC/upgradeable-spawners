@@ -1,6 +1,8 @@
 {
 	"display": {
-		"icon": "minecraft:spawner",
+		"icon": {
+			"id": "spawner"
+		},
 		"title": "A Better Cage",
 		"description": "Create an upgraded spawner"
 	},
